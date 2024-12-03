@@ -1,8 +1,38 @@
+import { motion } from "framer-motion";
+
 export const About = () => {
   return (
     <section id="about" className="py-20 bg-white">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold mb-12 text-center">About Me</h2>
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className="text-center mb-12"
+        >
+          <motion.h2 
+            className="text-4xl font-bold mb-4"
+            animate={{ 
+              scale: [1, 1.02, 1],
+              color: ["#1a1a1a", "#646cff", "#1a1a1a"] 
+            }}
+            transition={{ 
+              duration: 3,
+              repeat: Infinity,
+              repeatType: "reverse"
+            }}
+          >
+            About Me
+          </motion.h2>
+          <motion.p
+            className="text-xl text-gray-600"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.3 }}
+          >
+            Turning Vision Into Reality Through Code
+          </motion.p>
+        </motion.div>
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <p className="text-lg text-gray-600">
