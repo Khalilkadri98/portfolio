@@ -26,15 +26,29 @@ export const Contact = () => {
   const onSubmit = async (data: FormData) => {
     setIsLoading(true);
     try {
+      // Send the original message to your email
       await emailjs.send(
-        "YOUR_SERVICE_ID", // Replace with your EmailJS service ID
-        "YOUR_TEMPLATE_ID", // Replace with your EmailJS template ID
+        "service_rdnz6u3", // EmailJS service ID
+        "template_p6gpeja", // EmailJS template ID
         {
           from_name: data.name,
           from_email: data.email,
           message: data.message,
+          current_year: new Date().getFullYear(),
         },
-        "YOUR_PUBLIC_KEY" // Replace with your EmailJS public key
+        "uNYqxgtoj2EBx6YGk" // EmailJS public key
+      );
+
+      // Send an auto-reply to the user
+      await emailjs.send(
+        "service_rdnz6u3", // EmailJS service ID
+        "template_fc61u2n", // EmailJS auto-reply template ID
+        {
+          to_name: data.name,
+          to_email: data.email,
+          current_year: new Date().getFullYear(),
+        },
+        "uNYqxgtoj2EBx6YGk" // EmailJS public key
       );
 
       toast({
@@ -68,7 +82,6 @@ export const Contact = () => {
                 {...register("name", { required: "Name is required" })}
                 className="w-full"
                 placeholder="Your name"
-                error={errors.name?.message}
               />
               {errors.name && (
                 <p className="mt-1 text-sm text-red-600">{errors.name.message}</p>
@@ -91,7 +104,6 @@ export const Contact = () => {
                 })}
                 className="w-full"
                 placeholder="Your email"
-                error={errors.email?.message}
               />
               {errors.email && (
                 <p className="mt-1 text-sm text-red-600">{errors.email.message}</p>
@@ -108,7 +120,6 @@ export const Contact = () => {
                 className="w-full"
                 rows={4}
                 placeholder="Your message"
-                error={errors.message?.message}
               />
               {errors.message && (
                 <p className="mt-1 text-sm text-red-600">{errors.message.message}</p>
