@@ -53,6 +53,36 @@ export const Projects = () => {
       demoUrl: "https://demo.example.com",
       githubUrl: "https://github.com/example/project",
     },
+    {
+      title: "AI Chat Application",
+      description: "Real-time chat platform powered by artificial intelligence",
+      longDescription: "An innovative chat application that leverages advanced AI models to provide intelligent responses and assist users. Features include real-time message processing, context awareness, and multi-language support.",
+      image: "https://images.unsplash.com/photo-1649972904349-6e44c42644a7",
+      alt: "AI chat application interface showing conversation with AI",
+      technologies: ["React", "OpenAI API", "WebSocket"],
+      demoUrl: "https://demo.example.com",
+      githubUrl: "https://github.com/example/project",
+    },
+    {
+      title: "IoT Dashboard",
+      description: "Real-time IoT device monitoring dashboard",
+      longDescription: "A comprehensive IoT dashboard for monitoring and controlling connected devices in real-time. Features include device status tracking, data visualization, and automated alerts for critical events.",
+      image: "https://images.unsplash.com/photo-1518770660439-4636190af475",
+      alt: "IoT dashboard showing device metrics and controls",
+      technologies: ["React", "Node.js", "MQTT", "Chart.js"],
+      demoUrl: "https://demo.example.com",
+      githubUrl: "https://github.com/example/project",
+    },
+    {
+      title: "Code Learning Platform",
+      description: "Interactive platform for learning programming",
+      longDescription: "An interactive learning platform designed to teach programming through hands-on exercises and real-time code execution. Features include interactive tutorials, code challenges, and progress tracking.",
+      image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7",
+      alt: "Code learning platform showing interactive tutorial interface",
+      technologies: ["React", "TypeScript", "Docker"],
+      demoUrl: "https://demo.example.com",
+      githubUrl: "https://github.com/example/project",
+    }
   ];
 
   return (
