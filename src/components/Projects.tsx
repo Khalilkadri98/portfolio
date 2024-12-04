@@ -6,6 +6,7 @@ import {
   DialogTitle,
 } from "@/components/ui/dialog";
 import { useState } from "react";
+import { ArrowUpRight } from "lucide-react";
 
 interface Project {
   title: string;
@@ -36,7 +37,7 @@ export const Projects = () => {
       title: "Portfolio Website",
       description: "Modern portfolio website with smooth animations",
       longDescription: "A modern portfolio website showcasing professional work and skills. Features smooth animations, responsive design, and optimized performance. Built with React and Tailwind CSS for a clean, minimalist aesthetic.",
-      image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6",
+      image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d",
       alt: "Modern portfolio website showcase with responsive design",
       technologies: ["React", "Tailwind CSS", "Framer Motion"],
       demoUrl: "https://demo.example.com",
@@ -46,7 +47,7 @@ export const Projects = () => {
       title: "Task Management App",
       description: "Collaborative task management application",
       longDescription: "A collaborative task management application that helps teams organize and track their projects. Features include real-time updates, task assignments, progress tracking, and team collaboration tools.",
-      image: "https://images.unsplash.com/photo-1486718448742-163732cd1544",
+      image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b",
       alt: "Task management application interface showing project boards",
       technologies: ["React", "TypeScript", "Redux"],
       demoUrl: "https://demo.example.com",
@@ -71,37 +72,44 @@ export const Projects = () => {
           </p>
         </header>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="space-y-6">
           {projects.map((project, index) => (
             <motion.article
               key={index}
-              className="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 cursor-pointer"
+              className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 cursor-pointer"
               onClick={() => setSelectedProject(project)}
-              whileHover={{ scale: 1.02 }}
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
             >
-              <figure className="relative">
-                <img
-                  src={project.image}
-                  alt={project.alt}
-                  loading="lazy"
-                  className="w-full h-48 object-cover"
-                />
-              </figure>
-              <div className="p-6">
-                <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
-                <p className="text-gray-600 mb-4">{project.description}</p>
-                <div className="flex flex-wrap gap-2">
-                  {project.technologies.map((tech, techIndex) => (
-                    <span
-                      key={techIndex}
-                      className="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm"
-                    >
-                      {tech}
-                    </span>
-                  ))}
+              <div className="flex flex-col md:flex-row">
+                <div className="md:w-1/3 relative">
+                  <img
+                    src={project.image}
+                    alt={project.alt}
+                    loading="lazy"
+                    className="w-full h-48 md:h-full object-cover"
+                  />
+                  <div className="absolute inset-0 bg-black/0 hover:bg-black/20 transition-colors duration-300" />
+                </div>
+                <div className="md:w-2/3 p-6 flex flex-col justify-between">
+                  <div>
+                    <div className="flex items-center justify-between mb-2">
+                      <h3 className="text-xl font-semibold">{project.title}</h3>
+                      <ArrowUpRight className="w-5 h-5 text-gray-400" />
+                    </div>
+                    <p className="text-gray-600 mb-4">{project.description}</p>
+                    <div className="flex flex-wrap gap-2">
+                      {project.technologies.map((tech, techIndex) => (
+                        <span
+                          key={techIndex}
+                          className="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm"
+                        >
+                          {tech}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
                 </div>
               </div>
             </motion.article>
