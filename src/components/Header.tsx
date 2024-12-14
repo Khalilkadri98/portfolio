@@ -13,7 +13,7 @@ export const Header = () => {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-sm shadow-sm">
       <nav className="container mx-auto px-4">
-        <ul className="flex items-center justify-center h-16 space-x-8">
+        <ul className="flex items-center h-16 space-x-8 justify-start md:justify-center">
           {navItems.map((item) => (
             <li key={item.to}>
               <Link

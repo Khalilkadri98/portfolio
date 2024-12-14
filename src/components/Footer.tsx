@@ -9,19 +9,19 @@ export const Footer = () => {
             <h3 className="text-xl font-semibold mb-4">Contact Info</h3>
             <div className="flex items-center space-x-3">
               <Mail className="w-5 h-5 text-primary" />
-              <a href="mailto:your.email@example.com" className="hover:text-primary transition-colors">
-                your.email@example.com
+              <a href="mailto:khalilkadri023@gmail.com" className="hover:text-primary transition-colors">
+                khalilkadri023@gmail.com
               </a>
             </div>
             <div className="flex items-center space-x-3">
               <Phone className="w-5 h-5 text-primary" />
-              <a href="tel:+1234567890" className="hover:text-primary transition-colors">
-                +1 (234) 567-890
+              <a href="tel:+21655685653" className="hover:text-primary transition-colors">
+                +216 55685653
               </a>
             </div>
             <div className="flex items-center space-x-3">
               <MapPin className="w-5 h-5 text-primary" />
-              <span>San Francisco, CA</span>
+              <span>Monastir, Tunisia</span>
             </div>
           </div>
           
@@ -29,7 +29,7 @@ export const Footer = () => {
             <h3 className="text-xl font-semibold mb-4">Social Links</h3>
             <div className="flex space-x-4">
               <a
-                href="https://github.com/yourusername"
+                href="https://github.com/khalilkadri98"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-primary transition-colors"
@@ -37,7 +37,7 @@ export const Footer = () => {
                 <Github className="w-6 h-6" />
               </a>
               <a
-                href="https://linkedin.com/in/yourusername"
+                href="https://www.linkedin.com/in/khalil-kadri-aa8ab5278/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-primary transition-colors"
@@ -76,7 +76,7 @@ export const Footer = () => {
         
         <div className="mt-12 pt-8 border-t border-gray-800 text-center">
           <p className="text-gray-400">
-            © {new Date().getFullYear()} Your Name. All rights reserved.
+            © {new Date().getFullYear()} Khalil Kadri. All rights reserved.
           </p>
         </div>
       </div>

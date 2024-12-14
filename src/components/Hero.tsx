@@ -16,7 +16,7 @@ export const Hero = () => {
           className="text-white"
         >
           <h1 id="hero-heading" className="text-5xl md:text-7xl font-bold mb-6">
-            Creative Developer
+            Creative Full-stack web Developer
           </h1>
           <p className="text-xl md:text-2xl mb-8 text-white/90">
             Transforming ideas into elegant digital experiences through clean code
@@ -46,9 +46,7 @@ export const Hero = () => {
             width="600"
             height="400"
             className="rounded-lg shadow-2xl"
-            loading="eager"
-            priority="true"
-          />
+            loading="eager"          />
         </motion.div>
       </div>
     </section>

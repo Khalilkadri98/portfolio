@@ -8,6 +8,7 @@ import {
 import { useState } from "react";
 import { ArrowUpRight } from "lucide-react";
 
+
 interface Project {
   title: string;
   description: string;
@@ -24,64 +25,54 @@ export const Projects = () => {
 
   const projects: Project[] = [
     {
-      title: "E-Commerce Platform",
+      title: "Real Estate Company Website",
       description: "A full-stack e-commerce solution with React and Node.js",
-      longDescription: "A comprehensive e-commerce platform built with React and Node.js, featuring user authentication, product management, shopping cart functionality, and secure payment processing. The platform includes an admin dashboard for inventory management and order tracking.",
-      image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
+      longDescription: "A Real Estate Platform built with Laravel offers a feature-rich solution for property listing, searching, and management. The platform enables users to browse properties with advanced filters, view detailed listings, and connect with agents seamlessly. Laravel ensures a secure, scalable backend with smooth performance and robust data handling. Admin features allow for easy property management, user control, and analytics, creating an efficient and user-friendly experience for buyers, sellers, and real estate professionals.",
+      image: "./assets/harts-home.png",
       alt: "E-commerce platform dashboard showing product management interface",
-      technologies: ["React", "Node.js", "MongoDB"],
-      demoUrl: "https://demo.example.com",
-      githubUrl: "https://github.com/example/project",
+      technologies: ["Laravel,", "Google Maps API", "Email System","Real Estate"],
+      demoUrl: "https://www.hartsproperty.com.au/",
+      githubUrl: "",
     },
     {
-      title: "Portfolio Website",
+      title: "Company Portfolio Website",
       description: "Modern portfolio website with smooth animations",
-      longDescription: "A modern portfolio website showcasing professional work and skills. Features smooth animations, responsive design, and optimized performance. Built with React and Tailwind CSS for a clean, minimalist aesthetic.",
-      image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d",
+      longDescription: "An Electric Montage Company Portfolio Website built with Laravel showcases the company's expertise and projects in electrical installations and services. This robust and scalable platform features a modern design, highlighting the portfolio of completed works, client testimonials, and service offerings. Laravel ensures secure data handling, fast performance, and easy content management, creating a professional online presence that enhances client engagement and trust.",
+      image: "./assets/hyl-services.png",
       alt: "Modern portfolio website showcase with responsive design",
-      technologies: ["React", "Tailwind CSS", "Framer Motion"],
-      demoUrl: "https://demo.example.com",
-      githubUrl: "https://github.com/example/project",
+      technologies: ["Wordpress", "Elementor", "Email Communication","SEO"],
+      demoUrl: "https://hyl-elektrobau.de/",
+      githubUrl: "",
     },
     {
-      title: "Task Management App",
-      description: "Collaborative task management application",
-      longDescription: "A collaborative task management application that helps teams organize and track their projects. Features include real-time updates, task assignments, progress tracking, and team collaboration tools.",
-      image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b",
+      title: "Lean Sigma Corporation",
+      description: "E-learning application",
+      longDescription: "An E-learning Platform built with WordPress offers a seamless user experience for browsing, purchasing, and accessing courses. The Elemetor front end ensures a dynamic and interactive interface, while LearnDash powers the backend for efficient course management and secure e-commerce transactions. MySQL handles scalable data storage, enabling smooth user and content management. Integrated e-commerce features allow users to buy courses effortlessly, creating a robust and engaging learning environment.",
+      image: "./assets/leansigma-home.png",
       alt: "Task management application interface showing project boards",
-      technologies: ["React", "TypeScript", "Redux"],
-      demoUrl: "https://demo.example.com",
-      githubUrl: "https://github.com/example/project",
+      technologies: ["WordPress", "LearnDash", "Elementor"],
+      demoUrl: "https://leansigmacorporation.com/",
+      githubUrl: "",
     },
     {
-      title: "AI Chat Application",
-      description: "Real-time chat platform powered by artificial intelligence",
-      longDescription: "An innovative chat application that leverages advanced AI models to provide intelligent responses and assist users. Features include real-time message processing, context awareness, and multi-language support.",
-      image: "https://images.unsplash.com/photo-1649972904349-6e44c42644a7",
+      title: "Cashflow Application",
+      description: "Treasury management application powered by artificial intelligence",
+      longDescription: "A Cashflow MERN Application combines MongoDB, Express.js, React, and Node.js to manage and visualize financial transactions. The app includes secure user authentication for personalized dashboards. It integrates TensorFlow to analyze historical data and predict future cashflows using machine learning models, enabling users to make informed financial decisions. The intuitive interface ensures seamless transaction tracking, reporting, and forecasting in real time.",
+      image: "./assets/cashflow.png",
       alt: "AI chat application interface showing conversation with AI",
-      technologies: ["React", "OpenAI API", "WebSocket"],
-      demoUrl: "https://demo.example.com",
-      githubUrl: "https://github.com/example/project",
-    },
-    {
-      title: "IoT Dashboard",
-      description: "Real-time IoT device monitoring dashboard",
-      longDescription: "A comprehensive IoT dashboard for monitoring and controlling connected devices in real-time. Features include device status tracking, data visualization, and automated alerts for critical events.",
-      image: "https://images.unsplash.com/photo-1518770660439-4636190af475",
-      alt: "IoT dashboard showing device metrics and controls",
-      technologies: ["React", "Node.js", "MQTT", "Chart.js"],
-      demoUrl: "https://demo.example.com",
-      githubUrl: "https://github.com/example/project",
+      technologies: ["React", "TypeScript","TailwindCSS","REST API","Express.js","MongoDB", "WebSocket","SMTP","TensoFlow"],
+      demoUrl: "",
+      githubUrl: "https://github.com/Khalilkadri98/cashflow",
     },
     {
       title: "Code Learning Platform",
       description: "Interactive platform for learning programming",
-      longDescription: "An interactive learning platform designed to teach programming through hands-on exercises and real-time code execution. Features include interactive tutorials, code challenges, and progress tracking.",
-      image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7",
+      longDescription: "This project is a comprehensive online code editor built with the MERN stack, featuring robust tutorial management. Users can write and execute code in various programming languages using react-monaco-editor, with real-time output rendered dynamically. Secure authentication is provided via JWT and bcryptjs, including email verification and password reset. The tutorial management system allows users to create, edit, and delete tutorials, each with multiple steps and associated programming languages. The responsive UI ensures a seamless experience across devices.",
+      image: "./assets/home.png",
       alt: "Code learning platform showing interactive tutorial interface",
-      technologies: ["React", "TypeScript", "Docker"],
-      demoUrl: "https://demo.example.com",
-      githubUrl: "https://github.com/example/project",
+      technologies: ["React","Material UI", "Express.js","MongoDB","REST API", "Docker","SMTP"],
+      demoUrl: "",
+      githubUrl: "https://github.com/Khalilkadri98/online-editor",
     }
   ];
 

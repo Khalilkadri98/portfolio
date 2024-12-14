@@ -12,10 +12,26 @@ export const Resume = () => {
           </p>
           <Button
             className="bg-primary hover:bg-primary/90 text-white"
-            onClick={() => window.open("/resume.pdf", "_blank")}
+            onClick={() => window.open("./assets/Khalil_Kadri__EN_.pdf", "_blank")}
           >
-            Download Resume (PDF)
+            Resume (EN) (PDF)
           </Button>
+          <div className="max-w-2xl mx-auto text-center my-4">
+          <Button
+            className="bg-primary hover:bg-primary/90 text-white mx-4"
+            onClick={() => window.open("./assets/Khalil_Kadri__DE_.pdf", "_blank")}
+          >
+            Lebenslauf (DE) (PDF)
+          </Button>
+          </div>
+          <div className="max-w-2xl mx-auto text-center">
+          <Button
+            className="bg-primary hover:bg-primary/90 text-white"
+            onClick={() => window.open("./assets/Khalil_Kadri__FR_.pdf", "_blank")}
+          >
+            CV (FR) (PDF)
+          </Button>
+          </div>
         </div>
       </div>
     </section>
